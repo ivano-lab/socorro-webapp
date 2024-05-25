@@ -1,4 +1,4 @@
-## SOCORRO APP
+## SOCORRO WEB APP
 
 ![screenshot tela ](frontend/img/screen-shot.png)
 
