@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socorro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>ATENÇÂO!</h1>
+        <p>Este site é dedicado à coleta de informações para auxiliar no resgate de vítimas de desastres!</p>
+    </header>
+    <div id="main-content">
+        <button class="action-button" onclick="collectLocation()">PEDIR SOCORRO!</button>
+        <button class="action-button" onclick="listRescues()">PRESTAR SOCORRO!</button> <!-- implementando -->
+    </div>
+    <div id="rescue-requests">
+        <img src="img/boia-salva-vidas.png" alt="Boia Salva Vidas" class="impact-image">
+    </div>
+    <div id="rescues-table" style="display: none;">
+        <h2>Pedidos de Resgate</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="rescues-body">
+                <!-- Dados listados aqui -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

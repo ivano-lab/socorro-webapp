@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socorro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <form id="rescue-form">
+        <h2>Informações de Resgate:</h2>
+
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+        
+        <div class="input-group">
+            <label for="adults-count">Número de adultos:</label>
+            <input type="number" id="adults-count" name="adults-count" value="0">
+        </div>
+        
+        <div class="input-group">
+            <label for="children-count">Número de crianças:</label>
+            <input type="number" id="children-count" name="children-count" value="0">
+        </div>
+        
+        <div class="input-group">
+            <label for="elderly-count">Número de idosos:</label>
+            <input type="number" id="elderly-count" name="elderly-count" value="0">
+        </div>
+        
+        <div class="input-group">
+            <label for="animals-count">Número de animais:</label>
+            <input type="number" id="animals-count" name="animals-count" value="0">
+        </div>
+        
+        <label for="special-needs">Cuidados especiais:</label>
+        <textarea id="special-needs" name="special-needs" rows="3"></textarea>
+
+        <label for="additional-info">Observações adicionais:</label>
+        <textarea id="additional-info" name="additional-info" rows="3"></textarea>
+
+        <input type="" id="latitude" name="latitude">
+        <input type="" id="longitude" name="longitude">
+
+        <button type="submit" class="submit-button">Enviar</button>
+    </form>
+
+    <div class="thank-you" id="thank-you">
+        <p>Obrigado! Suas informações foram enviadas. Por favor, espere por contato e tente se manter seguro.</p>
+    </div>
+
+    <script src="location.js"></script>
+
+</body>
+</html>
