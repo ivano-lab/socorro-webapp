@@ -20,7 +20,8 @@ window.onload = function() {
             additional_info: document.getElementById('additional-info').value,
         };
 
-        fetch('http://localhost:3000/rescue', {
+        
+        fetch('database-1.ctk4ssm8uks1.eu-north-1.rds.amazonaws.com/rescue', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

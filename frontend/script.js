@@ -22,7 +22,7 @@ function openLocationApp(latitude, longitude) {
 }
 
 function listRescues() {
-  fetch('http://localhost:3000/rescues')
+  fetch('database-1.ctk4ssm8uks1.eu-north-1.rds.amazonaws.com/rescues')
       .then(response => response.json())
       .then(data => {
           const tableBody = document.getElementById('rescues-body');

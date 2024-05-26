@@ -27,7 +27,6 @@ db.connect(err => {
     console.log('Conectado ao banco de dados MySQL');
 });
 
-// Rota para receber os dados do formulário
 app.post('/rescue', (req, res) => {
     const {
         latitude,
